@@ -12,15 +12,10 @@ for i in range(N):
     #いないとき
     else:
         #客が到着するまで待つ
-        now += (time[i] - now)
+        now = time[i]
         #チケット買う
         now += A
         dict_time[time[i]] = now
-
-
-
-
-
 
 for i in range(N):
     print(dict_time[time[i]])
